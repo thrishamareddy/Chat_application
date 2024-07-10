@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/styles.min.css">
+    <style>
+        .centered-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .centered-form__box {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+            text-align: left; /* Align text left */
+        }
+
+        .centered-form__box h1,
+        .centered-form__box label {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .centered-form__box input,
+        .centered-form__box button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .centered-form__box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .centered-form__box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <center><h1>Join Chat</h1></center>
+            <form action="chat.html">
+                <label for="username">Display name</label>
+                <input type="text" name="username" placeholder="Display name" required>
+                <label for="room">Room</label>
+                <input type="text" name="room" placeholder="Room" required>
+                <button>Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
